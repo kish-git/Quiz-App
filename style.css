@@ -64,6 +64,7 @@ form .user-details .input-box, #pickup_place{
     border-color: #9b59b6;
 }
 .button input{
+    cursor: pointer;
     height: 30px;
     width: 100%;
     outline: none;
@@ -75,7 +76,7 @@ form .user-details .input-box, #pickup_place{
     letter-spacing: 4px;
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-form .button input:hover{
+.button input:hover{
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 @media(max-width: 584px){
@@ -94,3 +95,26 @@ form .button input:hover{
         width: 0;
     }
 }
+.proceed-button input{
+    
+    height: 30px;
+    width: 35%;
+    margin-left: 25%;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border-radius: 2.5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.rule{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
