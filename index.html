@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<<<<<<< HEAD
+    
     <script src="disable.js"></script>
+=======
+    <script type="text/javascript">
+
+      function nospaces(t){
+      
+      if(t.value.match(/\s/g)){
+      
+      alert('Sorry, you are not allowed to enter any spaces');
+      
+      t.value=t.value.replace(/\s/g,'');
+      
+      }
+      }
+      </script>
+      
+       
+>>>>>>> f3659020686c65adebacb2f6d8200de5343664da
     <!-- <link rel="stylesheet" href="splash.css"> -->
     
   </head>
@@ -18,19 +36,19 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
-            <input type="text" placeholder="Enter your first name" required />
+            <input type="text" placeholder="Enter your first name" onkeyup="nospaces(this)" required />
           </div>
           <div class="input-box">
             <span class="details">Last Name</span>
-            <input type="text" placeholder="Enter your last name" required />
+            <input type="text" placeholder="Enter your last name" onkeyup="nospaces(this)" required />
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required />
+            <input type="email" placeholder="Enter your email" required />
           </div>
           <div class="input-box">
             <span class="details">Phone</span>
-            <input type="text" placeholder="Enter your number" required />
+            <input type="text" placeholder="Enter your number" title="Please enter exactly 10 digits OR First digit is not zero" pattern="[1-9]{1}[0-9]{9}" required />
           </div>
           <div class="input-box">
             <span class="details">College Name</span>
