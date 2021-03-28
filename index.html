@@ -1,92 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Splash</title>
+    <link rel="stylesheet" href="splash.css">
+</head>
+<body>
+    <p style="text-align:center;"><img src="images/Hello gif.gif" alt="hello.gif"></p>
     
-    <script src="disable.js"></script>
-    <script type="text/javascript">
+    <script>
+        setTimeout(function(){
+            window.location.href = 'index2.html';
+        }, 7900);
+    </script>
 
-      function nospaces(t){
-      
-      if(t.value.match(/\s/g)){
-      
-      alert('Sorry, you are not allowed to enter any spaces');
-      
-      t.value=t.value.replace(/\s/g,'');
-      
-      }
-      }
-      </script>
-      
-       
-    <!-- <link rel="stylesheet" href="splash.css"> -->
-    
-  </head>
-
-  <body class="welcome">
-    <div class="container">
-      <div class="title">Login</div>
-      <form action="#">
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details">First Name</span>
-            <input type="text" placeholder="Enter your first name" onkeyup="nospaces(this)" required />
-          </div>
-          <div class="input-box">
-            <span class="details">Last Name</span>
-            <input type="text" placeholder="Enter your last name" onkeyup="nospaces(this)" required />
-          </div>
-          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="email" placeholder="Enter your email" required />
-          </div>
-          <div class="input-box">
-            <span class="details">Phone</span>
-            <input type="text" placeholder="Enter your number" title="Please enter exactly 10 digits OR First digit is not zero" pattern="[1-9]{1}[0-9]{9}" required />
-          </div>
-          <div class="input-box">
-            <span class="details">College Name</span>
-            <input type="text" placeholder="Enter your College name" required />
-          </div>
-          <div class="input-box">
-            <span class="details">Select Subject</span>
-            <select id="pickup_place" name="pickup_place">
-              <option value="TOC" selected="selected">
-                Theory of Computation
-              </option>
-              <option value="DBMS">Database Management Systems (DBMS)</option>
-              <option value="SEPM">
-                Software Engineering & Project Management
-              </option>
-              <option value="ISEE">
-                Information Systems & Engineering Economics
-              </option>
-              <option value="CN">Computer Networks (CN)</option>
-            </select>
-          </div>
-          <div class="input-box">
-            <span class="details">Question's Quantity</span>
-            <select id="pickup_place" name="pickup_place">
-              <option value="10">10</option>
-              <option value="25" selected="selected">25</option>
-              <option value="40">40</option>
-              <option value="50">50</option>
-            </select>
-          </div>
-          <div class="input-box">
-            <span class="details">Password</span>
-            <input type="password" placeholder="Enter Password" required />
-          </div>
-        </div>
-        <div class="button">
-          <input type="submit" value="Proceed" />
-        </div>
-      </form>
-    </div>
-    <span id="splash-overlay" class="splash"></span>
-    <span id="welcome" class="z-depth-4"></span>    
-  </body>
+</body>
 </html>
