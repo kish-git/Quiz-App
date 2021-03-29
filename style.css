@@ -96,7 +96,7 @@ form .user-details .input-box, #pickup_place{
     }
 }
 .proceed-button input{
-    
+    cursor: pointer;    
     height: 30px;
     width: 35%;
     margin-left: 25%;
